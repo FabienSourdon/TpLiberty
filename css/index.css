@@ -1,0 +1,497 @@
+@font-face{
+    font-family: "kiona";
+    src: url("../fonts/Kiona-Regular.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------Navbar---------- */
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar h1{
+    color: #fff;
+    padding-left: 10px;
+}
+
+    /* -----Dropdown nav----- */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 100vw;
+    right: 0;
+    padding-top: 10px;
+    background-color: brown;
+    text-align: center;
+    height: 30px;
+}
+
+.dropdown-content a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.dropdown-btn{
+    padding: 0 10px 0 0;
+    border: none;
+    background-color: transparent;
+}
+.afficher{
+    display: block;
+}
+
+    /* -----Menu nav----- */
+
+.menuLG{
+    display: none;
+    padding-right: 10px;
+}
+
+.menuLG a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.menuLG a:hover{
+    text-decoration: underline;
+}
+ 
+/* ----------Page 1---------- */
+    /* -----Paragraphes-----*/
+
+#page1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../img/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-page1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+}
+
+
+.txt-page1{
+    width: 80%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.txt-page1 p{
+    font-family: "kiona";
+    font-size: 4.5vh;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+/* -----Bouton Contact-----*/
+
+.btn-contact{
+    width: 25%;
+    height: 50px;
+    border: none;
+    background-color: brown;
+    border-radius: 25px;
+    margin-top: 35px;
+}
+
+.btn-contact a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contact:hover{
+    background-color: rgb(80, 21, 21);
+    color: #ccc;
+}
+
+/* ----------Page 2---------- */
+
+#page2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+.txt-page2{
+    width: 70%;
+    height: 30vh;
+    padding-top: 60px;
+}
+
+.txt-page2 h2{
+    font-family: "kiona";
+    font-size: 5vh;
+    color: rgb(71, 71, 71);
+    text-align: center;
+}
+
+.txt-page2 p{
+    font-size: 1.5vh;
+    color: rgb(119, 117, 117);
+    text-align: center;
+}
+
+.img-page2{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img-page2 img{
+    opacity: 1;
+}
+
+.img-page2 img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+    filter: blur(1px);
+    transition: 0.5s;
+}
+
+.img-hover{
+    width: fit-content;
+    height: fit-content;
+    background-image: url(../img/loupe.png);
+}
+
+/* ----------Page 3---------- */
+    /* -----Paragraphes-----*/
+
+#page3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+.txt-page3{
+    width: 70%;
+    height: 30vh;
+    padding-top: 60px;
+}
+
+.txt-page3 h2{
+    font-family: "kiona";
+    font-size: 5vh;
+    color: rgb(71, 71, 71);
+    text-align: center;
+}
+
+.txt-page3 p{
+    font-size: 1.5vh;
+    color: rgb(119, 117, 117);
+    text-align: center
+}
+
+.img-page3{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10vh;
+}
+
+.img-page3-layout{
+    width: 22%;
+    height: 500px;
+    border: 1px solid rgba(119, 117, 117, 0.6);
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
+    z-index: 8;
+    padding-bottom: 15px;
+}
+
+.img-page3-layout-gold{
+    width: 22%;
+    height: 500px;
+    border: 1px solid rgba(52, 152, 219, 0.6);
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
+    z-index: 8;
+    padding-bottom: 15px;
+}
+
+    /* -----Vignettes-----*/
+
+.head-price{
+    width: 100%;
+    height: 25%;
+    background-color: rgba(219, 212, 212, 0.8);
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid rgba(119, 117, 117, 0.6) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.head-price-gold{
+    width: 100%;
+    height: 25%;
+    background-color: rgba(52, 152, 219, 0.8);
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.6) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    color: #fff;
+}
+
+.head-price h3, p{
+    margin: 0;
+    color: rgb(92, 91, 91);
+}
+
+.head-price-gold>h3{
+    margin: 0;
+    color: #fff;
+}
+
+.head-price-gold>p{
+    margin: 0;
+    color: #fff;
+}
+
+
+.head-price :first-child{
+    padding-bottom: 10px;
+}
+
+.head-price-gold :first-child{
+    padding-bottom: 10px;
+}
+
+.img-page3-layout>p{
+    text-align: center;
+    width: 70%;
+    border-bottom: 1px solid rgba(119, 117, 117, 0.6);
+    align-self: center;
+    padding-bottom: 5%;
+}
+
+.img-page3-layout-gold>p{
+    text-align: center;
+    width: 70%;
+    border-bottom: 1px solid rgba(119, 117, 117, 0.6);
+    align-self: center;
+    padding-bottom: 5%;
+}
+
+.foot-price{
+    width: 70%;
+}
+
+.btn-foot-price{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1e2a37;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+.btn-foot-price-gold{
+    background-color: rgb(52, 152, 219);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ----------Page 4---------- */
+    /* -----Paragraphe-----*/
+#page4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2c3e50;
+}
+
+.txt-page4{
+    width: 70%;
+    height: 30vh;
+    padding-top: 60px;
+}
+
+.txt-page4 h2{
+    font-family: "kiona";
+    font-size: 5vh;
+    color: #fff;
+    text-align: center;
+}
+
+.txt-page4 p{
+    font-size: 1.5vh;
+    color: #fff;
+    text-align: center
+}
+
+.form-page4{
+    width: 80%;
+    height: 40vh;
+}
+
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #fff;
+}
+    /* -----Formulaire-----*/
+
+
+/* ----------Media Query---------- */
+@media (min-width: 2560px){
+    .img-page2{
+        width: 50%;
+    }
+}
+@media (min-width: 1900px){
+    #page3{
+        height: 100vh;
+    }
+
+    .img-page2 img{
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 1440px){
+    .img-page2{
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1024px){
+    .btn-contact{
+        margin-top: 50px;
+    }
+
+    .img-page3{
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px){
+    .dropdown{
+        display: none;
+    }
+
+    .menuLG{
+        display: inline-block;
+    }
+
+    .txt-page1{
+        width: 70%;
+    }
+
+    .txt-page1 p{
+        font-size: 6vh;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .img-page2 img{
+        margin: 0 5px 10px 5px;
+    }
+}
+
+@media (max-width: 425px){
+    .btn-contact{
+        width: 35%;
+    }
+
+    .img-page3-layout{
+        width: 40%;
+        margin: 10px;
+    }
+
+    .img-page3-layout-gold{
+        width: 40%;
+        margin: 10px;
+    }
+}
+@media (max-width: 375px){
+    .dropdown-content a{
+        font-size: 1.5vh;
+    }
+    
+    .img-page2{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 265px){
+    .dropdown-content a{
+        font-size: 1vh;
+    }
+}  
